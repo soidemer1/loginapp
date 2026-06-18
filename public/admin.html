@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="admin-container">
+
+    <h1>Panel Administrador</h1>
+
+<a href="/logout">
+    <button>Cerrar sesión</button>
+</a>
+
+<br><br>
+
+
+    <button onclick="cargarUsuarios()">
+        Actualizar
+    </button>
+
+    <br><br>
+
+
+
+    <div class="table-container">
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Teléfono</th>
+                <th>Números favoritos</th>
+                <th>Fecha registro</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaUsuarios">
+
+        </tbody>
+
+    </table>
+    </div>
+
+    <script src="js/admin.js"></script>
+
+    </div>
+
+</body>
+</html>

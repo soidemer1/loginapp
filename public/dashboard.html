@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Bienvenido</h1>
+
+<br>
+
+<a href="/logout">
+    <button>Cerrar sesión</button>
+</a>
+
+<br><br>
+
+
+    <div id="phoneSection">
+
+        <h2>Número de teléfono</h2>
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Escribe tu número"
+        >
+
+        <button onclick="guardarTelefono()">
+            Enviar
+        </button>
+
+        <p id="phoneMessage"></p>
+
+    </div>
+
+    <div id="favoritesSection" style="display:none;">
+
+        <h2>Números favoritos</h2>
+
+        <input
+            type="text"
+            id="favorites"
+            placeholder="Ejemplo: 3,7,9"
+        >
+
+        <button onclick="guardarFavoritos()">
+            Enviar
+        </button>
+
+        <p id="favoritesMessage"></p>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+    </div>
+
+</body>
+</html>
